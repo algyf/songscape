@@ -172,7 +172,7 @@ p.big {
 
 									</div>
 									
-									<h3><i>Methodologies</i></h3>
+									<h3><i>Methodology</i></h3>
 									<div class="meth">
 										<p>Our first objective is to identify the major global trends in music streaming in order to observe the patterns of propagation of songs and determine the major “exporters” and “consumers” of music.</p>
 										<p>To do so we downloaded Spotify’s weekly top 200 charts for each country for the first 6 months (23 weeks) of 2017 – we decided to observe the variation over the course of 6 months as we found it was the maximum lifespan of a song in the top charts. We then merged them into one .csv file using a useful Python library: glob, which identifies files that have the same format in a directory:</p>
@@ -291,12 +291,11 @@ Balance refers to the number of different types of element within a system: “I
 <p>This may in part be due to limitations of our dataset. We only examined 18 countries and some of these countries did not have data available for certain indexes.</p>
 
 <p>Nevertheless, the lack of any clear correlation suggests the complexity of the system that affects the listening habits of people in a given country.</p>
-						</div>
-			</section>
+						
 							
                             <!-- Methodology -->
                                  <div class="inner">
-									<h3><i>Methodologies</i></h3>
+									<h3><i>Methodology</i></h3>
 										<p>The first step was identifying the countries that most actively use Spotify, in order to obtain an analysis that can be generalized to their music scene. We did so by calculating the total number of streams of all songs in the first 23 weeks of 2017 in different countries, and normalized them by dividing the streams by the local population, to obtain the “ratio” that represents the local usage of Spotify. Using glob, Pandas, Numpy and matplotlib to import, clean and visualize data, we presented the results in the form of a horizontal bar-graph:</p>
 										<p style="text-align:center;"><img src="images/Global/bar.png" alt="csv" width="100%" height="100%"></p>
 										<p>From the countries showing high streams-to-population ratios we chose a diverse sample of 18 countries based on geographical area (e.g. Denmark and Hong-Kong) and size of the country (e.g. France and Portugal), whose pie charts are shown above.</p>
@@ -304,6 +303,8 @@ Balance refers to the number of different types of element within a system: “I
 										<p style="text-align:center;"><img src="images/Global/loop.png" alt="csv" width="50%" height="50%"></p>
 										<p>Finally, using the Python seaborn library, which is a powerful library in making the visualizations containing statistical elements, we created linear regressions comparing different indexes such as the globalisation and migration indexes to our song diversity index, in order to establish whether a correlation exists between certain social aspects of the country and its musical scene.</p>
 									</div>
+							</div>
+			</section>
 
 				<!-- Three -->
 					<!-- Wrapper -->
@@ -360,7 +361,7 @@ Balance refers to the number of different types of element within a system: “I
                             <br>
                             <!-- Methodology -->
                                  <div class="inner">
-									<h3><i>Methodologies</i></h3>
+									<h3><i>Methodology</i></h3>
 										<p>The first step was identifying the countries that most actively use Spotify, in order to obtain an analysis that can be generalized to their music scene. We did so by calculating the total number of streams of all songs in the first 23 weeks of 2017 in different countries, and normalized them by dividing the streams by the local population, to obtain the “ratio” that represents the local usage of Spotify. Using glob, Pandas, Numpy and matplotlib to import, clean and visualize data, we presented the results in the form of a horizontal bar-graph:</p>
 										<p style="text-align:center;"><img src="images/Global/bar.png" alt="csv" width="100%" height="100%"></p>
 										<p>From the countries showing high streams-to-population ratios we chose a diverse sample of 18 countries based on geographical area (e.g. Denmark and Hong-Kong) and size of the country (e.g. France and Portugal), whose pie charts are shown above.</p>
