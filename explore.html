@@ -150,18 +150,6 @@ p.big {
 
 									</div>
 									
-									<h3><i>Methodology</i></h3>
-									<div class="meth">
-										<p>Our first objective is to identify the major global trends in music streaming in order to observe the patterns of propagation of songs and determine the major “exporters” and “consumers” of music.</p>
-										<p>To do so we downloaded Spotify’s weekly top 200 charts for each country for the first 6 months (23 weeks) of 2017 – we decided to observe the variation over the course of 6 months as we found it was the maximum lifespan of a song in the top charts. We then merged them into one .csv file using a useful Python library: glob, which identifies files that have the same format in a directory:</p>
-										<p style="text-align:center;"><img src="images/edit.png" alt="csv" width="90%" height="90%"></p>
-										<p style="text-align:center; font-size:13px;">Dataset sample and the glob library that helped import files</p>
-										<p>We then cleaned the data and used it to plot the spatial and temporal evolution of the most popular songs from each country and visualize it on an interactive world map. This is the most difficult part of our visualization – an interactive interface requires much more techniques than creating static visualizations like bar and pie charts. We found a Python library that satisfies our requirements: Bokeh. It can create widgets like drop-down lists and slide bars that control the visualization, and generate a html file that could be embedded in a website. We combined it with the Numpy function polyfit() and poly1d() that generate the polynomials (an example of "polynomial" is given below) that best fit the temporal evolution of the popularity from our data, and create an interactive bubble map showing the spatial difference and temporal evolution of the songs. Visitors of our website could play with it on the top of this page.</p>				
-										<p style="text-align:center;"><img src="images/bokeh.png" alt="down" width="90%" height="90%"></p>
-										<p style="text-align:center; font-size:13px;">The Bokeh programme section</p>
-										<p style="text-align:center;"><img src="images/equation.png" alt="down" width="50%" height="50%"></p>
-										<p style="text-align:center; font-size:13px;">The Polyfit and Poly1d functions, with the polynomial printed</p>
-									</div>
 
 									<h3><i>Results and Anakysis</i></h3>
 									<div class="results">
@@ -177,6 +165,19 @@ p.big {
 										<p>Generally speaking, a trend of musical globalization could be observed on this map – almost every song in the drop-down list could find its position at different countries and regions, which could be attributed to the increasingly popular way of music consumption, online streaming, which provides more accessibility and availability to all countries around the world, eliminating the barriers or lags created by distance (for example, a song from the US could be accessed in Taiwan almost at the same time). Nevertheless, songs from different regions and countries still follow quite different propagating patterns: songs from US, UK and Canada are the most popular around the world, which transmit broadly and deeply around the world, while Latin American music is restricted to their local listeners – even Despacito, which enjoyed tremendous popularity in 2017, has much more popularity in Latin American countries than any other regions. Asian music, at least on Spotify, has no market in the western world, only consumed in the local countries; however, considering that most Asian countries have their own music platform, and some popular musical trends from Asia, such as K-pop and J-pop, is gaining its popularity in the west in recent years, we need more research into Asian music.</p>
 										<p>The most distinct propagating pattern lies in Europe, which is worth being discussed separately. There are two types of music from European countries: those in English and those in local languages, which perform totally differently: the former transmit further and deeper around the world, while the latter are limited locally. We came across an article by Bekhuis, Lubbers and Ultee (2014), who found that the popularity of European songs domestically has been increasing since 1990s, while the Americanization of music due to the economic dominance of America is not obvious in Europe. Their findings might seem true in terms of the number of streams played – European music is consistently gaining its market globally, which forms a “resistance” to American culture; however, they did not take the language into account. As we discovered, English songs from Europe is apparently more popular than those in local languages: European music might be resisting “Americanized market” by producing “Americanized music”.</p>
 										<p>The findings of our global analysis, especially the propagation of music, prompted us to consider our research in more details: what are the specific situations in individual countries? Why does some music popular in one country while less welcomed in another? Thus, we conducted specific data visualizations and analysis locally and found out more patterns there. To see that, proceed by clicking “Phase 2”.</p>
+									</div>
+												
+												<h3><i>Methodology</i></h3>
+									<div class="meth">
+										<p>Our first objective is to identify the major global trends in music streaming in order to observe the patterns of propagation of songs and determine the major “exporters” and “consumers” of music.</p>
+										<p>To do so we downloaded Spotify’s weekly top 200 charts for each country for the first 6 months (23 weeks) of 2017 – we decided to observe the variation over the course of 6 months as we found it was the maximum lifespan of a song in the top charts. We then merged them into one .csv file using a useful Python library: glob, which identifies files that have the same format in a directory:</p>
+										<p style="text-align:center;"><img src="images/edit.png" alt="csv" width="90%" height="90%"></p>
+										<p style="text-align:center; font-size:13px;">Dataset sample and the glob library that helped import files</p>
+										<p>We then cleaned the data and used it to plot the spatial and temporal evolution of the most popular songs from each country and visualize it on an interactive world map. This is the most difficult part of our visualization – an interactive interface requires much more techniques than creating static visualizations like bar and pie charts. We found a Python library that satisfies our requirements: Bokeh. It can create widgets like drop-down lists and slide bars that control the visualization, and generate a html file that could be embedded in a website. We combined it with the Numpy function polyfit() and poly1d() that generate the polynomials (an example of "polynomial" is given below) that best fit the temporal evolution of the popularity from our data, and create an interactive bubble map showing the spatial difference and temporal evolution of the songs. Visitors of our website could play with it on the top of this page.</p>				
+										<p style="text-align:center;"><img src="images/bokeh.png" alt="down" width="90%" height="90%"></p>
+										<p style="text-align:center; font-size:13px;">The Bokeh programme section</p>
+										<p style="text-align:center;"><img src="images/equation.png" alt="down" width="50%" height="50%"></p>
+										<p style="text-align:center; font-size:13px;">The Polyfit and Poly1d functions, with the polynomial printed</p>
 									</div>
 								</section>
 							</div>
