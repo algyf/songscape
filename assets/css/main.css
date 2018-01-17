@@ -3608,7 +3608,7 @@ h1.semantic {
 		}
 
     .wrapper.style4-alt {
-            background-color: #53a2be; /*107e7d*/
+            background-color: #4281A4; /*107e7d*/
 }
 
 .wrapper.style5-alt {
@@ -3617,6 +3617,10 @@ h1.semantic {
 
 .wrapper.style6-alt {
     background-color: #006494;
+}
+
+.wrapper.style7-alt {
+    background-color: #53a2be;
 }
 
 
