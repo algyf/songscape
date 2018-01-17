@@ -300,11 +300,17 @@ Balance refers to the number of different types of element within a system: “I
                                  <div class="inner">
 									<h3><i>Methodology</i></h3>
 										<p>The first step was identifying the countries that most actively use Spotify, in order to obtain an analysis that can be generalized to their music scene. We did so by calculating the total number of streams of all songs in the first 23 weeks of 2017 in different countries, and normalized them by dividing the streams by the local population, to obtain the “ratio” that represents the local usage of Spotify. Using glob, Pandas, Numpy and matplotlib to import, clean and visualize data, we presented the results in the form of a horizontal bar-graph:</p>
-										<p style="text-align:center;"><img src="images/Global/bar.png" alt="csv" width="100%" height="100%"></p>
+										<p style="text-align:center;"><img src="images/bar.png" alt="csv" width="100%" height="100%"></p>
+										<p style="text-align:center; font-size:13px;">Bar chart of streams-to-population ratio</p>
 										<p>From the countries showing high streams-to-population ratios we chose a diverse sample of 18 countries based on geographical area (e.g. Denmark and Hong-Kong) and size of the country (e.g. France and Portugal), whose pie charts are shown above.</p>
 										<p>Using Pandas and Numpy in Python, we then merged a dataset of the songs’ origin with the Spotify dataset and cleaned it so that each song’s name was associated to its country of production. This process involved a looping function that assign the country of origin to a song if it has already existed in the dataset so as to avoid repetitive work (shown below). This allowed us to retrieve a “song diversity index”, based on the part of local songs over the part of foreign songs that made the top 200 in the past year. We then used matplotlib to create pie charts above to visualize the origin of the songs listened to in each of the 18 countries.</p>
-										<p style="text-align:center;"><img src="images/Global/loop.png" alt="csv" width="50%" height="50%"></p>
-										<p>Finally, using the Python seaborn library, which is a powerful library in making the visualizations containing statistical elements, we created linear regressions comparing different indexes such as the globalisation and migration indexes to our song diversity index, in order to establish whether a correlation exists between certain social aspects of the country and its musical scene.</p>
+										<p style="text-align:center;"><img src="images/loop.png" alt="csv" width="50%" height="50%"></p>
+										<p style="text-align:center; font-size:13px;">The looping technique that assigns each song with its country of origin</p>
+										<p style="text-align:center;"><img src="images/pie.png" alt="csv" width="50%" height="50%"></p>
+										<p style="text-align:center; font-size:13px;">The code that generates pie charts</p>
+										<p>Finally, using the Python seaborn library, which is a powerful library in making the visualizations containing statistical elements, we created linear regressions comparing different indexes, including KOF globalisation indexes (ETH, 2017), Softpower scores (USC center on public diplomacy, 2016), GDP per capita, net migration and population to our song diversity index, in order to establish whether a correlation exists between certain social aspects of the country and its musical scene.</p>
+										<p style="text-align:center;"><img src="images/seaborn.png" alt="csv" width="50%" height="50%"></p>
+										<p style="text-align:center; font-size:13px;">Seaborn library that generates the regression lines</p>
 									</div>
 							</div>
 			</section>
